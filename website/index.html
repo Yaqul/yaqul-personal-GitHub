@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN|en-GB">
+<head>
+  <meta charset="UTF-8"> <!-- 设置字符编码为UTF-8，支持中文字符 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 设置视窗缩放，适应移动设备 -->
+  <title>Immersive video introduce</title> <!-- 页面标题，显示在浏览器标签上 -->
+  <link rel="icon" href="/image/favicon.ico" type="image/x-icon" sizes="16x16">
+  <link rel="stylesheet" href="css/styles.css"> <!-- 引入styles_CSS文件 -->
+  <link rel="stylesheet" href="css/grid.css"> <!-- 引入grid_CSS文件 -->
+
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav>
+    <div class="logo">
+      <img src="image/vr_logo.jpg" alt="品牌Logo" />
+    </div>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#section1">Important Technologies</a>
+      <a href="#section2">Application Areas</a>
+      <a href="#section3">Technical Challenges</a>
+    </div>
+  </nav>
+
+<!-- 封面部分 -->
+<div id="home"    class="hero">
+  <div>
+    <h1>Immersive video and gaming</h1> <!-- 页面主标题 -->
+    <p>are next-generation technology</p> <!-- 页面副标题 -->
+  </div>
+</div>
+
+<!-- 内容部分 -->
+<div id="section1" class="section">
+    <h2 class="toggle-title">Important technologies</h2>
+    <div class="toggle-content">
+        <!---科技发展是让次世代技术出现的必要因素-->
+      <p>Technological development is a necessary factor for the emergence of</p>
+      <p>next-generation Technologies</p>
+      <div class="grid-container">
+        <!---光场相机-->
+        <div class="grid-item">light field camera</div>
+        <!---LiDRA激光雷达-->
+        <div class="grid-item">LiDAR </div>
+        <div class="grid-item">Artificial intelligent</div>
+        <div class="grid-item">Image processing technology</div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="section2" class="section">
+    <h2 class="toggle-title">Application Areas</h2>
+    <div class="toggle-content">
+      <p>State-of-the-art equipment and technology open the door to the next era</p>
+      <div class="grid-container">
+        <div class="grid-item">Fun & Games</div>
+        <div class="grid-item">Virtual Tours</div>
+        <div class="grid-item">Reminiscing the past</div>
+        <div class="grid-item">Entering the Cyber ​​World</div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="section3" class="section">
+    <h2 class="toggle-title">Technical Challenges</h2>
+    <div class="toggle-content">
+      <p>Although the future is bright, we still have many challenges</p>
+      <div class="grid-container">
+        <div class="grid-item">real-time rendering technology</div>
+        <div class="grid-item">Excessive cost:</div>
+        <div class="grid-item">Ecosystem establishment</div>
+        <div class="grid-item">Uncanny valley</div>
+      </div>
+    </div>
+  </div>
+
+<!-- 引入外部JavaScript文件 -->
+<script src="js/main.js"></script>
+<script src="js/click_grid.js"></script>
+<script src="js/click_nav.js"></script>
+</body>
+</html>

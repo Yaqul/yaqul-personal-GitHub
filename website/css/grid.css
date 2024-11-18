@@ -1,0 +1,64 @@
+/* 田字格容器样式 */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列布局 */
+    grid-template-rows: 1fr 1fr; /* 两行布局 */
+    gap: 0; /* 去掉内间距，形成连续的边框 */
+    width: 100%; /* 宽度100% */
+    max-width: 500px; /* 可根据需要调整最大宽度 */
+    margin: 20px auto; /* 上下外边距 */
+  }
+  
+  /* 田字格每个格子的样式 */
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #333; /* 添加边框形成田字格 */
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 两列布局 */
+    grid-template-rows: 1fr 1fr; /* 两行布局 */
+    gap: 10px; /* 增加网格间的间隙 */
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff; /* 背景色 */
+    padding: 10px; /* 外边距 */
+    border: 1px solid #ccc; /* 外边框 */
+  }
+  
+  .grid-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    border: 1px solid #ccc; /* 每个格子的边框 */
+  }
+  
+  /* 中间水平和垂直分割线 */
+  .grid-container .grid-item:nth-child(2),
+  .grid-container .grid-item:nth-child(4) {
+    border-left: 3px solid #333; /* 左边中间加粗 */
+  }
+  .grid-container .grid-item:nth-child(1),
+  .grid-container .grid-item:nth-child(3){
+    border-right: 3px solid #333; /* 右边边中间加粗 */
+  }
+  
+  .grid-container .grid-item:nth-child(3),
+  .grid-container .grid-item:nth-child(4) {
+    border-top: 3px solid #333; /* 下方顶间加粗 */
+  }
+  .grid-container .grid-item:nth-child(1),
+  .grid-container .grid-item:nth-child(2) {
+    border-bottom: 3px solid #333; /* 上方底部加粗 */
+  }
